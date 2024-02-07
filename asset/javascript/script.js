@@ -5,4 +5,16 @@ function calcoloPrezzo() {
 
   const basePrice = km * 0.21;
 
+  if (age < 18) {
+    basePrice *= 0.8; 
+  } 
+
+  else if (eta >= 65) {
+    basePrice *= 0.6; 
+  }
+
+  const finalPrice = basePrice.toFixed(2);
+
+  document.getElementById('ticketPrice').textContent = "prezzo finale del biglietto: " + finalPrice + "€";
+
 }
