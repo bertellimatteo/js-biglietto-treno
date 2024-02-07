@@ -9,7 +9,7 @@ function calcoloPrezzo() {
     basePrice *= 0.8; 
   } 
 
-  else if (eta >= 65) {
+  else if (age >= 65) {
     basePrice *= 0.6; 
   }
 
